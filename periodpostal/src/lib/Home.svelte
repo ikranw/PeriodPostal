@@ -1,5 +1,6 @@
 <script>
   export let goDonate; 
+  import homemadepads.jpg from '../public/homemadepads.jpg';
 </script>
 
 <section class="home">
