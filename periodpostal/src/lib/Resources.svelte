@@ -2,8 +2,8 @@
   let originVid = "Origin video";
   let instructVid = "Instructional video";
 
-  let orginLink = "https://www.youtube.com/watch?v=4ygEJafeHC0";
-  let instructLink = "https://www.youtube.com/watch?v=311dZyYttD8";
+  let orginLink = "https://www.youtube.com/embed/4ygEJafeHC0";
+  let instructLink = "https://www.youtube.com/embed/311dZyYttD8";
 </script>
 
 <div class="resources-page">
