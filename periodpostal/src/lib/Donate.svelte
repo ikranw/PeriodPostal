@@ -66,12 +66,12 @@
     </div>
 
     <div class="actions">
+      <button type="button" class="submit" on:click={handleSubmit}>
+        Submit
+      </button>
       <button type="button" class="cancel" on:click={() => { 
         alert("Donation was canceled."); cancelButton();}}>
         Cancel
-      </button>
-      <button type="button" class="submit" on:click={handleSubmit}>
-        Submit
       </button>
     </div>
   </div>
@@ -154,6 +154,7 @@
 
   .actions {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     gap: 0.75rem;
     margin-top: 1.5rem;

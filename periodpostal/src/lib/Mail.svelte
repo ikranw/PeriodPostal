@@ -1,13 +1,19 @@
 <script>
+  import pproject  from '../assets/pproject.png';
+  import TPP_Logo from '../assets/TPP_Logo.png';
+  import user1  from '../assets/user1.jpg';
+  import user2  from '../assets/user2.jpg';
+  import user3  from '../assets/user3.jpg';
+
   let organizations = [
     {
       name: "The Pachamama Project",
-      img: "/public/pproject.png",
+      img: pproject,
       shipsTo: "Refugee camps and communities in Uganda, Ukraine, Pakistan, Italy, South Sudan, Lebanon, Greece, and more",
     },
     {
       name: "The Pad Project",
-      img: "/public/TPP_Logo.png",
+      img: TPP_Logo,
       shipsTo: "Internationally to countries like Kenya, Uganda, Sierra Leone, Ghana, India, Guatemala, and more",
     }
   ];
@@ -15,21 +21,21 @@
   let forumPosts = [
     {
       userName: "Amina",
-      userImg: "/public/user2.jpg",
+      userImg: user1,
       date: "Wednesday, December 10th, 2025",
       country: "United States",
       message: "I need menstrual products of 2–4 pads and the shipping location address is 1234 postal office.",
     },
     {
       userName: "Sara",
-      userImg: "/public/user1.jpg",
+      userImg: user2,
       date: "Friday, December 5th, 2025",
       country: "Lebanon",
       message: "I need sewing materials and cotton fabric. The shipping location address is 2323 postal office.",
     },
     {
       userName: "Ikran",
-      userImg: "/public/user3.jpg",
+      userImg: user3,
       date: "Friday, December 5th, 2025",
       country: "Somalia",
       message: "I need sweing materials and 4–8 resuable pads. The shipping location address is 2525 postal office.",

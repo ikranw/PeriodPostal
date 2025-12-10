@@ -1,6 +1,6 @@
 <script>
   export let goDonate; 
-  import homemadepads.jpg from '../public/homemadepads.jpg';
+  import homemadepads  from '../assets/homemadepads.jpg';
 </script>
 
 <section class="home">
@@ -19,7 +19,7 @@
     </div>
 
     <div class="pad-img">
-      <img src="/public/homemadepads.jpg" alt="homemad pads" />
+      <img src={homemadepads} alt="homemade pads" />
     </div>
   </section>
 
