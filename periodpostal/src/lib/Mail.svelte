@@ -25,14 +25,14 @@
       userImg: "/public/user1.jpg",
       date: "Friday, December 5th, 2025",
       country: "Lebanon",
-      message: "I need sewing materials and cotton fabric. The shipping location address is 2323 shipping product.",
+      message: "I need sewing materials and cotton fabric. The shipping location address is 2323 postal office.",
     },
     {
       userName: "Ikran",
       userImg: "/public/user3.jpg",
       date: "Friday, December 5th, 2025",
       country: "Somalia",
-      message: "I need sweing materials and 2–4 pads. The shipping location address is 2525 shipping product.",
+      message: "I need sweing materials and 4–8 resuable pads. The shipping location address is 2525 postal office.",
     }
   ];
 </script>
@@ -40,7 +40,7 @@
 <div class="mail-page">
 
   <section class="org-section">
-    <h2 class="section-title">Organizations to Mail to:</h2>
+    <h2 class="section-title">Organizations to Mail to: </h2>
 
     <div class="org-list">
       {#each organizations as org}
@@ -66,10 +66,10 @@
             <img src={post.userImg} alt={post.userName} class="user-img" />
             <div class="user-info">
               <p class="user-name">{post.userName}</p>
-              <p class="user-meta">{post.date} • {post.country}</p>
+              <p class="post-date">{post.date} | {post.country}</p>
             </div>
           </div>
-          <div class="forum-message">
+          <div class="post-message">
             <p>{post.message}</p>
           </div>
         </div>
@@ -139,13 +139,13 @@
     font-size: 0.9rem;
     font-weight: 600;
     margin: 0;
-    color: #444444;
+    color: #000000;
   }
 
   .org-ship-location {
     font-size: 0.95rem;
     margin: 0;
-    color: #222222;
+    color: #272626;
   }
 
   .forum-section {
@@ -162,10 +162,11 @@
     background-color: #ffffff;
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(155, 9, 9, 0.05);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    border: 1.5px solid #ffdde6;
   }
 
   .forum-header {
@@ -175,8 +176,8 @@
   }
 
   .user-img {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -192,16 +193,16 @@
     color: #000000;
   }
 
-  .user-meta {
+  .post-date {
     font-size: 0.85rem;
     color: #666666;
     margin: 0;
   }
 
-  .forum-message p {
+  .post-message p {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #222222;
+    color: #000000;
   }
 </style>

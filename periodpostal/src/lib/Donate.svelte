@@ -54,7 +54,7 @@
         </div>
 
         <div class="cardfield">
-          <label for="exp">Expiration Date (Year/Month):</label>
+          <label for="exp">Expiration Date:</label>
           <input id="exp" type="text" placeholder="YYYY/MM" />
         </div>
       </div>

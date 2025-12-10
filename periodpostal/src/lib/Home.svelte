@@ -5,8 +5,8 @@
 <section class="home">
   <h1 class="title">Period Postal</h1>
 
-  <section class="info-section">
-    <div class="info-text">
+  <section class="home-section">
+    <div class="home-text">
       <p>
         We are on a mission to promote access to menstrual products across the world.
         We aim to achieve this through donations, volunteer efforts, and community efforts of mailing handmade pads to 
@@ -41,8 +41,8 @@
     font-size: 2.2rem;
   }
 
-  .info-section {
-    background-color: #ffe3f0; /* light pink */
+  .home-section {
+    background-color: #ffe3f0; 
     border-radius: 10px;
     padding: 2rem;
     display: flex;
@@ -52,7 +52,7 @@
     justify-content: space-between;
   }
 
-  .info-text {
+  .home-text {
     flex: 1 1 250px;
     font-size: 1rem;
     line-height: 1.5;
@@ -79,7 +79,7 @@
   }
 
   .donate-button {
-    background-color: #ff4f9a; /* pink */
+    background-color: #ff4f9a;
     color: #ffffff;
     border: none;
     padding: 0.8rem 2.5rem;

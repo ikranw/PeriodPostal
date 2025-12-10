@@ -35,11 +35,3 @@
     <Donate submitButton={goHome} cancelButton={goHome} />
   {/if}
 </main>
-
-<style>
-  main {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    min-height: 100vh;
-    background-color: white;
-  }
-</style>

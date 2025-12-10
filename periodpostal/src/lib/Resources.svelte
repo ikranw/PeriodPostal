@@ -1,13 +1,13 @@
 <script>
-  let originVid = "Origin video";
-  let instructVid = "Instructional video";
+  let originVid = "Origin Video";
+  let instructVid = "Instructional Video";
 
   let orginLink = "https://www.youtube.com/embed/4ygEJafeHC0";
   let instructLink = "https://www.youtube.com/embed/311dZyYttD8";
 </script>
 
 <div class="resources-page">
-  <h1 class="title">How to make your own handmade pad </h1>
+  <h1 class="title">how to make your own handmade pad </h1>
 
   <div class="videos-section">
     <div class="video-card">
