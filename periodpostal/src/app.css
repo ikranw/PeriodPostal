@@ -1,0 +1,119 @@
+/* Global Theme Variables */
+:root {
+  --pink: #ff4f9a;
+  --pink-light: #ffe3f0;
+  --text-dark: #222;
+  --text-light: #fff;
+  --bg: #ffffff;
+  --radius: 10px;
+  --transition: 0.2s ease-in-out;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+  background-color: var(--bg);
+  color: var(--text-dark);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default dark mode from Vite template */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--bg);
+    color: var(--text-dark);
+  }
+}
+
+/* Reset & Clean Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--text-dark);
+}
+
+/* No global centering (Svelte pages handle layout themselves) */
+body {
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+/* Links */
+a {
+  color: var(--pink);
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons default style (component styles can override) */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+}
+
+/* Pink Button */
+button.pink {
+  background: var(--pink);
+  color: var(--text-light);
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0px 4px 10px rgba(255, 79, 154, 0.3);
+}
+button.pink:hover {
+  opacity: 0.9;
+}
+
+/* White Button w/ Red Text */
+button.white-red {
+  background: white;
+  color: red;
+  border: 1px solid red;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+button.white-red:hover {
+  background-color: #ffe5e5;
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Utility Spacing */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
